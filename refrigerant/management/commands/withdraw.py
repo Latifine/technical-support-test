@@ -4,7 +4,7 @@ import threading
 
 
 class Command(BaseCommand):
-    help = "Simulate condition when withdrawing gas from a vessel"
+    help = "Simulate condition when withdrawing refrigerant from a vessel."
 
     def handle(self, *args, **kwargs):
         Vessel.objects.create(name="Test Vessel", content=50.0)
